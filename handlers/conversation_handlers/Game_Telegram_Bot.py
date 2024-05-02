@@ -14,8 +14,8 @@ class SecondConversationHandler(BaseHandler):
             WAY: [MessageHandler(filters.Regex('^(Право|Ліво)$'), cls.way)],
             LIFE: [MessageHandler(filters.Regex('^(1|2)$'), cls.life)],
             DANGER: [MessageHandler(filters.Regex('^(1|2)$'), cls.danger)],
-            HELP:[MessageHandler(filters.Regex('^(Ні|Так)$'), cls.Help)],
-            HOME:[MessageHandler(filters.Regex('^(Ні|Так)$'), cls.home)]
+            HELP: [MessageHandler(filters.Regex('^(Ні|Так)$'), cls.Help)],
+            HOME: [MessageHandler(filters.Regex('^(Ні|Так)$'), cls.home)]
 ,
         },
         fallbacks=[CommandHandler('exit', cls.exit)]
